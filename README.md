@@ -5,16 +5,18 @@ In this module, we will be using machine learning to build a model that can pred
 ## Results
 ### Resampling
 -	Undersampling with the ClusterCentroid algorithm largely underperformed, the absence of data reduced the models ability to predict outcomes accurately. The F1 score of 0.6 was the lowest of any algorithm used in this analysis, it also had the lowest recall of high-risk applicants
--	The SMOTE algorithm had a better recall of high-risk applicants than the BalancedRandomForestClassifier, thus it would be the more ideal oversampling technique for this analysis
--	The SMOTEEN algorithm had the best recall of high-risk applicants and would therefore be the best resampling algorithm to use in this analysis. Even though the oversampling techniques had better F1 scores, its more important that the high-risk applicants are identified
-
-
+-	The SMOTE algorithm had a better recall than the RandomOversampler, even though Randomoversampler had a higher F-1 score
+-	The SMOTEEN algorithm had the best recall of high-risk applicants out of the resampling techniques
+![Alt text](RandomOversampling.jpg)
+![Alt text](SmoteOversampling.jpg)
+![Alt text](ClusterCentroid.jpg)
+![Alt text](SMOTEENN.jpg)
 ### Ensemble
 -	Ensemble learners predicted high-risk applicants with better precision, and very high f-scores
 -	The BalancedRandomForestClassifier had similar results as the oversampling techniques, but with twice the precision
 -	The EasyEnsembleClassifier had the highest f-score and precision for predicting high-risk applicants
-
-
+![Alt text](BalancedRandomForestClassifier.jpg)
+![Alt text](EasyEnsembleClassifier.jpg)
 
 
 ## Summary
